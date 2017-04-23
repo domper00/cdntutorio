@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Player</title>
+  <script src="jwplayer.js"></script>
+</head>
+<body>
+<div id="player"></div>
+<script src="jwplayer.js"></script>
+<script type="text/javaScript">
+jwplayer("player").setup({
+	skin: {
+		name: "bekle"
+	}
+    playlist: [{
+        "sources": [{
+            "file": "https://tubeapi.herokuapp.com/api/play?url=7L2VelXtXv4&format=best[height=360]",
+            "type": "video/mp4",
+            "label": "SD",
+            "default": true
+        }, {
+            "file": "https://tubeapi.herokuapp.com/api/play?url=7L2VelXtXv4&format=best[height=720]",
+            "type": "video/mp4",
+            "label": "HD"
+        }],
+        "image": "https://i.ytimg.com/vi/7L2VelXtXv4/sddefault.jpg"
+    }],
+    autostart: false,
+    primary: "html5",
+	flashplayer: "jwplayer.flash.swf",
+	preload: "metadata",
+	stretching: "exactfit",
+	width: "100%",
+	aspectratio: "16:9"
+});
+</script>
+</body>
+</html>
