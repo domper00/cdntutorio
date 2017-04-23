@@ -135,8 +135,6 @@
 }
 .star-rating {
   display: inline-block;
-  font-family: Wingdings;
-  font-size: 30px;
   color: #ccc;
   position: relative;
 }
