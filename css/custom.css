@@ -1,0 +1,19 @@
+.star-rating {
+  display: inline-block;
+  font-family: Wingdings;
+  font-size: 30px;
+  color: #ccc;
+  position: relative;
+}
+.star-rating::before,
+.star-rating span::before{
+  content: "\2605\2605\2605\2605\2605";
+  display: block;
+}
+.star-rating span {
+  color: gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
